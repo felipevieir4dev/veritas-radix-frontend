@@ -1,21 +1,17 @@
-// Frontend-only environment configuration
-// No backend environment variables needed
+// Configuração de variáveis de ambiente para Vite
+export const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
+export const UNSPLASH_ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY || '';
+export const NODE_ENV = import.meta.env.MODE || 'development';
 
-export const ENV = {
-  NODE_ENV: import.meta.env.NODE_ENV || 'development',
-  PROD: import.meta.env.PROD || false,
-  DEV: import.meta.env.DEV || true,
-  
-  // App information
-  APP_TITLE: 'Veritas Radix',
-  APP_DESCRIPTION: 'Aplicação de Etimologia - Frontend Only',
-  
-  // Version from package.json would go here
-  VERSION: '2.0.0',
-  
-  // Development flags
-  DEBUG: import.meta.env.NODE_ENV === 'development',
-  MOCK_ENABLED: true,
-} as const;
+// Função para verificar se as APIs estão configuradas
+export function isGeminiConfigured(): boolean {
+  return !!GEMINI_API_KEY;
+}
 
-export default ENV;
+export function isUnsplashConfigured(): boolean {
+  return !!UNSPLASH_ACCESS_KEY;
+}
+
+export function isDevelopment(): boolean {
+  return NODE_ENV === 'development';
+}

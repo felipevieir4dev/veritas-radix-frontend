@@ -360,7 +360,7 @@ export function ChallengesScreen() {
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-3">
                           <div className="w-10 h-10 bg-deep-red rounded-full flex items-center justify-center">
-                            <IconComponent size={20} className="text-white" />
+                            <IconComponent className="w-5 h-5 text-white" />
                           </div>
                           <div>
                             <h3 className="text-deep-red font-display">
@@ -443,7 +443,7 @@ export function ChallengesScreen() {
                             index === 2 ? 'bg-sepia text-white' :
                             'bg-parchment-aged text-sepia border border-sepia-light'
                           }`}>
-                            {index < 3 ? <Medal size={16} /> : index + 1}
+                            {index < 3 ? <Medal className="w-4 h-4" /> : index + 1}
                           </div>
                           <div>
                             <p className="text-deep-red font-medium">
@@ -482,7 +482,7 @@ export function ChallengesScreen() {
                         return (
                           <div key={achievement.id} className="flex items-center gap-3 p-2 bg-parchment-aged rounded">
                             <div className="w-8 h-8 bg-deep-red rounded-full flex items-center justify-center">
-                              <IconComponent size={16} className="text-white" />
+                              <IconComponent className="w-4 h-4 text-white" />
                             </div>
                             <div className="flex-1">
                               <p className="text-deep-red text-sm font-medium">{achievement.title}</p>
