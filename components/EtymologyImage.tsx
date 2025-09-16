@@ -129,9 +129,9 @@ export function EtymologyImage({
               <p className="text-white text-xs font-body truncate">{word}</p>
               <div className="flex items-center gap-1">
                 {useDallE && !usingFallback ? (
-                  <Sparkles className="w-3 h-3 text-yellow-300" title="Gerado por IA" />
+                  <Sparkles className="w-3 h-3 text-yellow-300" />
                 ) : (
-                  <ImageIcon className="w-3 h-3 text-white/70" title="Imagem de arquivo" />
+                  <ImageIcon className="w-3 h-3 text-white/70" />
                 )}
               </div>
             </div>
@@ -151,11 +151,11 @@ export function EtymologyImage({
         <div className="absolute top-2 right-2">
           {useDallE && !usingFallback ? (
             <div className="w-5 h-5 bg-yellow-400 text-black rounded-full flex items-center justify-center opacity-80">
-              <Sparkles className="w-3 h-3" title="Gerado por IA" />
+              <Sparkles className="w-3 h-3" />
             </div>
           ) : (
             <div className="w-5 h-5 bg-blue-500 text-white rounded-full flex items-center justify-center opacity-80">
-              <ImageIcon className="w-3 h-3" title="Imagem de arquivo" />
+              <ImageIcon className="w-3 h-3" />
             </div>
           )}
         </div>

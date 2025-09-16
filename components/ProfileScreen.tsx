@@ -126,7 +126,7 @@ export function ProfileScreen() {
                     } border-2 hover:shadow-xl`}
                   >
                     <CardContent className="p-4 text-center">
-                      <IconComponent className={`mx-auto mb-2 ${achievement.unlocked ? 'text-deep-red' : 'text-sepia'}`} size={24} />
+                      <IconComponent className={`mx-auto mb-2 ${achievement.unlocked ? 'text-deep-red' : 'text-sepia'}`} />
                       <h4 className="text-sm mb-1 text-deep-red">
                         {achievement.title}
                       </h4>
