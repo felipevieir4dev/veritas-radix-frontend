@@ -112,7 +112,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
               )}
 
               <div className="relative">
-                <Mail className="absolute left-4 top-1/2 transform -translate-y-1/2 text-sepia" size={16} />
+                <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 text-sepia" size={16} />
                 <Input
                   type="email"
                   placeholder="Vosso endereço de correio"
@@ -120,12 +120,12 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
                   required
-                  className="responsive-input pl-12 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
+                  className="responsive-input pl-14 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
                 />
               </div>
               
               <div className="relative">
-                <Lock className="absolute left-4 top-1/2 transform -translate-y-1/2 text-sepia" size={16} />
+                <Lock className="absolute left-3 top-1/2 transform -translate-y-1/2 text-sepia" size={16} />
                 <Input
                   type="password"
                   placeholder="Vossa palavra secreta"
@@ -133,7 +133,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                   onChange={(e) => setPassword(e.target.value)}
                   disabled={isLoading}
                   required
-                  className="responsive-input pl-12 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
+                  className="responsive-input pl-14 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
                 />
               </div>
               
