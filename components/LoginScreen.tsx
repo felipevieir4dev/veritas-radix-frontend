@@ -120,7 +120,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
                   required
-                  className="responsive-input pl-14 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
+                  className="responsive-input pl-16 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
                 />
               </div>
               
@@ -133,7 +133,7 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
                   onChange={(e) => setPassword(e.target.value)}
                   disabled={isLoading}
                   required
-                  className="responsive-input pl-14 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
+                  className="responsive-input pl-16 bg-[var(--color-aged-paper)] border-[var(--color-deep-red-light)] focus:border-[var(--color-deep-red)] rounded-lg font-body text-aged"
                 />
               </div>
               
